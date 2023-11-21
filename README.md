@@ -12,7 +12,7 @@ A Simple Flutter App. 📱🧰
 
 ## The Results 😎🌆  
 ### The Header Of Home Screen   
-<img src="assets/mobile/header.gif">  
+<img src="assets/mobile/header.gif?raw=true">  
 
 ### The Body Home Screen    
 <img src="assets/mobile/body.gif">  
