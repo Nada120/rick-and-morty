@@ -10,3 +10,11 @@ A Simple Flutter App. 📱🧰
 5) flutter_bloc: ^8.1.3
 6) meta: ^1.10.0  
 
+## The Results 😎🌆  
+<img src="rick-and-morty/assets/mobile/header.gif">  
+
+<img src="rick-and-morty/assets/mobile/body.gif">  
+
+<img src="rick-and-morty/assets/mobile/search.gif">  
+
+<img src="rick-and-morty/assets/mobile/connectionerror(1).jpg">  
