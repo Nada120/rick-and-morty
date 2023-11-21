@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../shared/widgets/custom_error_connection.dart';
 import '../../shared/constant/colors.dart';
 import '../../cubits_logic/cubit/characters_cubit.dart';
 import '../shared/widgets/custom_loading.dart';
@@ -13,7 +14,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,12 +24,15 @@ class _HomePageState extends State<HomePage> {
 
   Widget buildBlocWidget() {
     return BlocBuilder<CharactersCubit, CharactersState>(
-      builder: (context, state) {
-      if (state is CharactersLoaded) {
-        return HomePageBody(characters: (state).characters);
-      } else {
-        return const CustomLoading();
+        builder: (context, state) {
+      bool isConnected = context.read<CharactersCubit>().checkConnection();
+      if (state is CharactersLoaded && isConnected) {
+          return HomePageBody(characters: (state).characters);
+        
+      } else if (state is CharactersErrorCase) {
+        return const CustomErrorConnection();
       }
+      return const CustomLoading();
     });
   }
 }

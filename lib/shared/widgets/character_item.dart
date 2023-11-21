@@ -23,7 +23,10 @@ class CharacterItem extends StatelessWidget {
             CachedNetworkImage(
               fit: BoxFit.fill,
               imageUrl: character.image,
-              placeholder: (_, __) => Image.asset('assets/images/loading.gif'),
+              placeholder: (_, __) => Image.asset(
+                'assets/images/loading.gif',
+                fit: BoxFit.fill,
+              ),
             ),
             Container(
               width: double.infinity,

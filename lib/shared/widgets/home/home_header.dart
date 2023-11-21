@@ -8,8 +8,8 @@ class HomeHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: darkBlue,
-      height: 40,
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      height: 100,
+      padding: const EdgeInsets.only(top: 50, left: 20, right: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

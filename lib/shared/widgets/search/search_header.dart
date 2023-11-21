@@ -43,7 +43,7 @@ class SearchHeader extends StatelessWidget {
           cancel: cancel,
         ),
         Positioned(
-          bottom: 85,
+          bottom: 70,
           left: 5,
           child: IconButton(
             onPressed: () {
