@@ -1,16 +1,12 @@
-# rickandmorty
+# Rick And Morty Series 🧠👽📽️
 
-A new Flutter project.
+A Simple Flutter App. 📱🧰
 
-## Getting Started
+## The Packages Were Used 📦⚒️   
+1) bloc: ^8.1.2  
+2) cupertino_icons: ^1.0.2  
+3) cached_network_image: ^3.3.0  
+4) dio: ^5.3.3
+5) flutter_bloc: ^8.1.3
+6) meta: ^1.10.0  
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
